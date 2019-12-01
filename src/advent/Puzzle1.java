@@ -1,6 +1,6 @@
 package advent;
 
-public class Advent1_1 {
+public class Puzzle1 {
 
 	private	int[] modules = {68884,100920,114424,139735,103685,133067,77650,77695,85927,108144,	131312,	97795,83234,
 			61637,137735,126903,71037,58593,54510,66117,54164,60761,128623,52359,55458,145494,57319,98478,
@@ -12,11 +12,23 @@ public class Advent1_1 {
 	
 	private int sum = 0;
 	
-	public void sum()
+	public Puzzle1()
+	{
+		// empty constructor
+	}
+	
+		public void sum()
 	{
 		for(int module : modules) {
-			sum += (module / 3 - 2);
+			int fuel = 0;
+			while((module/3 -2) > 0)
+			{
+				fuel += module / 3 - 2;
+				module = module / 3 - 2;
+			}
+			sum += fuel;
 		}
 		System.out.print(sum);
 	}
+
 }
