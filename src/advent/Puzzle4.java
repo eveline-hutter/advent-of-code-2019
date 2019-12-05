@@ -2,14 +2,14 @@ package advent;
 
 import java.util.Arrays;	//System.out.print(Arrays.toString(this.password));
 
-public class Puzzle3 {
+public class Puzzle4 {
 
 	private final int MIN = 353096;
 	private final int MAX = 843212;
 	private int[] password = new int[6];
 	private int counter = 0;
 	
-	public Puzzle3()
+	public Puzzle4()
 	{
 		
 	}
